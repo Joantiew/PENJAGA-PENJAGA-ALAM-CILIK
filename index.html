@@ -189,7 +189,34 @@ code{font:700 .95em ui-monospace,Menlo,Consolas,monospace;background:var(--bg2);
 :root[data-theme="dark"] .lyr .chorus .tag{color:#ffd966}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lyr .chorus{background:linear-gradient(160deg,#5c4a12,#7a5f12);color:#fff1c2}:root:not([data-theme="light"]) .lyr .chorus .tag{color:#ffd966}}
 audio{width:100%;max-width:560px}
-
+/* Warna kotak Rakaman Lagu */
+#songBox{
+  background:#D5F3E9;
+  border:2px solid #8CCDB8;
+  border-radius:22px;
+  padding:20px;
+}
+/* Warna kotak Video Jom Nyanyi */
+#songVid{
+  background:#E9DFFF;
+}
+#songVid{
+  border-radius:16px;
+}
+/* Warna keseluruhan kad video */
+.card:has(#songVid){
+  background:#E9DFFF;
+  border-color:#BBA2E5;
+}
+/* Warna tajuk video */
+.card:has(#songVid) h3{
+  color:#67429A;
+}
+/* Pastikan pautan video jelas */
+.card:has(#songVid) a{
+  color:#67429A;
+  font-weight:800;
+}
 /* Exercise */
 .ex{display:grid;gap:18px}
 .ex-top{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
